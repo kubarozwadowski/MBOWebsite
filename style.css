@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9; /* Light grey background for a softer look */
+    font-family: 'Roboto', sans-serif; /* Applies Roboto font to the body text */
+    color: #333; /* Dark grey text color for better readability */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Ensures the container spans the full width */
+    padding: 20px 0; /* Top and bottom padding */
+    background-color: #fff; /* White background for contrast */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    margin-bottom: 50px; /* Adds space between sections */
+}
+
+.container img {
+    width: 120px; /* Fixed width for logo consistency */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.content {
+    display: flex;
+    justify-content: space-around; /* Even spacing around items */
+    align-items: center; /* Vertically centers the items */
+    padding: 20px; /* Padding inside the content container */
+    background-color: #fff; /* White background to match header */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Adds shadow for depth */
+    border-radius: 8px; /* Rounded corners for a modern look */
+    margin: 0 30px; /* Horizontal margin for breathing space */
+}
+
+.text-section {
+    width: 60%; /* Adjusted width for balance */
+}
+
+.content img {
+    width: 35%; /* Adjusted width for better visual balance */
+    border-radius: 8px; /* Rounded corners for the image */
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5em; /* Larger font size for emphasis */
+    color: #0056b3; /* Blue color for a fresh, modern look */
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2em; /* Slightly larger paragraph font size */
+    line-height: 1.6; /* Improved line spacing for readability */
+    text-align: justify; /* Justifies the text for a cleaner look */
+}
