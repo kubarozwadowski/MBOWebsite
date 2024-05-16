@@ -1,56 +1,54 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f9; /* Light grey background for a softer look */
+    background-color: white; /* Default background for the whole page */
     font-family: 'Roboto', sans-serif; /* Applies Roboto font to the body text */
-    color: #333; /* Dark grey text color for better readability */
 }
 
 .container {
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 100%; /* Ensures the container spans the full width */
-    padding: 20px 0; /* Top and bottom padding */
-    background-color: #fff; /* White background for contrast */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow for depth */
-    margin-bottom: 50px; /* Adds space between sections */
+    margin-top: 0px;
+    border-bottom: 2px solid grey; /* Adds a thin line below the images */
+    background-color: rgb(226, 218, 218); /* Sets the background color */
+    padding: 20px 0; /* Optional padding for better visual spacing */
 }
 
 .container img {
-    width: 120px; /* Fixed width for logo consistency */
-    height: auto; /* Maintain aspect ratio */
+    width: 10%; /* Adjust the width of each image */
+    margin: 0 10px; /* Adds space between the images */
 }
 
-.content {
-    display: flex;
-    justify-content: space-around; /* Even spacing around items */
-    align-items: center; /* Vertically centers the items */
-    padding: 20px; /* Padding inside the content container */
+.about {
+    display: flex; /* Enables flexbox layout */
+    justify-content: space-between; /* Distributes space between and around content items */
+    align-items: center; /* Vertically centers the items in the container */
+    padding: 20px; /* Adds padding inside the content container */
     background-color: #fff; /* White background to match header */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Adds shadow for depth */
+    box-shadow: 0 0 15px rgba(0,0,0,0.1); /* Adds shadow for depth */
     border-radius: 8px; /* Rounded corners for a modern look */
-    margin: 0 30px; /* Horizontal margin for breathing space */
 }
 
 .text-section {
-    width: 60%; /* Adjusted width for balance */
+    margin-top: -250px; /* Raises the text section relative to its original position */
+    width: 65%; /* Adjust the width for the text container */
+    margin-left: 30px;
 }
 
-.content img {
-    width: 35%; /* Adjusted width for better visual balance */
-    border-radius: 8px; /* Rounded corners for the image */
+.about img {
+    width: 50%; /* Adjust the width of the image */
+    order: 2; /* Puts the image on the right */
 }
 
 h1 {
-    text-align: center;
-    font-size: 2.5em; /* Larger font size for emphasis */
+    text-align: center; /* Centers the header text horizontally */
+    font-size: 2em; /* Sets a large font size for the header */
     color: #0056b3; /* Blue color for a fresh, modern look */
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* Adds space below the header */
+    font-weight: 700; /* Makes the font bolder */
+    margin-top: -80px;
 }
 
 p {
-    font-size: 1.2em; /* Slightly larger paragraph font size */
-    line-height: 1.6; /* Improved line spacing for readability */
-    text-align: justify; /* Justifies the text for a cleaner look */
+    margin: 0; /* Resets any default margins */
 }
