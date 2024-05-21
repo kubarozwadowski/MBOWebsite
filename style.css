@@ -149,5 +149,57 @@ p {
     transform: translateX(-50%);
     margin-top: 300px;
 }
+/* Media queries for smaller screens */
+@media only screen and (max-width: 768px) {
+    .container img {
+        width: 30%; /* Adjust image size for smaller screens */
+    }
+
+    .about {
+        flex-direction: column; /* Stack content vertically on smaller screens */
+        text-align: center; /* Center-align text on smaller screens */
+    }
+
+    .about img {
+        width: 70%; /* Adjust image size for smaller screens */
+        margin: 20px 0; /* Add space around image on smaller screens */
+    }
+
+    .text-section {
+        width: 90%; /* Adjust width of text section for smaller screens */
+        margin-left: 0; /* Remove left margin on smaller screens */
+    }
+
+    .call-to-book {
+        padding: 30px 0; /* Adjust padding for smaller screens */
+    }
+
+    .contact-container {
+        flex-direction: column; /* Stack contact info vertically on smaller screens */
+    }
+
+    .contact-info {
+        width: 90%; /* Adjust width of contact info for smaller screens */
+    }
+
+    .reviews {
+        flex-direction: column; /* Stack reviews vertically on smaller screens */
+        align-items: center; /* Center-align reviews on smaller screens */
+    }
+
+    .review {
+        position: static; /* Reset position for reviews on smaller screens */
+        margin: 20px auto; /* Add margin to reviews on smaller screens */
+    }
+
+    .top-left, .top-right {
+        margin: 0; /* Reset margin for top-left and top-right reviews on smaller screens */
+    }
+
+    .bottom-center {
+        margin: 0; /* Reset margin for bottom-center review on smaller screens */
+    }
+}
+
 
 
