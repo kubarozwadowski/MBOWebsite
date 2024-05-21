@@ -199,6 +199,10 @@ p {
     .bottom-center {
         margin: 0; /* Reset margin for bottom-center review on smaller screens */
     }
+
+    .top-right {
+        margin-left: 80px;
+    }
 }
 
 
