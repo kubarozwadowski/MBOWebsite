@@ -3,48 +3,50 @@ body {
     padding: 0;
     align-items: center;
     justify-content: center;
-    background-color: white; /* Default background for the whole page */
-    font-family: 'Roboto', sans-serif; /* Applies Roboto font to the body text */
+    background-color: white; 
+    font-family: 'Roboto', sans-serif; 
 }
 
 .container {
     display: flex;
     justify-content: center;
     margin-top: 0px;
-    background-color: rgb(245, 243, 243); /* Sets the background color */
-    padding: 20px 0; /* Optional padding for better visual spacing */
+    background-color: rgb(245, 243, 243); 
+    padding: 20px 0; 
 }
 
 .container img {
-    width: 10%; /* Adjust the width of each image */
-    margin: 0 10px; /* Adds space between the images */
+    width: 12%; 
+    margin: 0 10px; 
 }
 
 .about {
-    display: flex; /* Enables flexbox layout */
-    justify-content: space-between; /* Distributes space between and around content items */
-    align-items: center; /* Vertically centers the items in the container */
-    padding: 20px; /* Adds padding inside the content container */
-    background-color: #fff; /* White background to match header */
-    box-shadow: 0 0 15px rgba(0,0,0,0.1); /* Adds shadow for depth */
-    border-radius: 8px; /* Rounded corners for a modern look */
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    padding: 20px; 
+    background-color: #fff; 
+    box-shadow: 0 0 15px rgba(0,0,0,0.1); 
+    border-radius: 8px; 
+    flex-wrap: wrap; 
 }
 
 .text-section {
-    width: 65%; /* Adjust the width for the text container */
-    margin-left: 400px;
+    width: 65%; 
     font-family: "Dancing Script";
     max-width: 750px;
     font-size: 22px;
+    text-align: left; 
 }
 
 .about img {
-    width: 50%; /* Adjust the width of the image */
-    order: 2; /* Puts the image on the right */
+    width: 20%; 
+    margin-left: 250px; 
+    order: 2; 
 }
 
 p {
-    margin: 0; /* Resets any default margins */
+    margin: 0; 
 }
 
 .services {
@@ -74,28 +76,30 @@ p {
     margin-bottom: 5px;
 }
 
-.services h3{
+.services h3 {
     font-family: "Dancing Script";
     font-size: 32px;
 }
 
 .call-to-book {
-    background-color: rgb(245, 243, 243); /* Green background color */
-    text-align: center; /* Center-align the text */
+    background-color: rgb(245, 243, 243); 
+    text-align: center; 
     padding-top: 0px;
     padding-bottom: 80px;
-    margin-bottom: -100px; /* Add some space between the header and contact info */
+    margin-bottom: -100px; 
     margin-top: 50px;
-    font-family:"Dancing Script";
+    font-family: "Dancing Script";
 }
 
 .call-to-book h1 {
-    font-size: 36px; /* Adjust the font size as needed */
-    margin-bottom: 0px; /* Remove any default margins */
+    font-size: 36px; 
+    margin-bottom: 0px; 
     font-family: "Dancing Script";
     font-weight: bold;
 }
-
+.star1 img{
+    width: 10%;
+}
 .contact-container {
     margin-top: 100px;
     display: flex;
@@ -110,7 +114,7 @@ p {
     box-shadow: 0 0 15px rgba(0,0,0,0.1);
     border-radius: 8px;
     padding: 20px;
-    width: 400px; /* Adjust the width of the rectangle */
+    width: 400px; 
 }
 
 .contact-info p {
@@ -121,15 +125,18 @@ p {
     line-height: 1.5;
 }
 
-.logo2 {
+.logo2{
     margin-top: 16px;
     margin-bottom: 16px;
     align-items: center;
     justify-content: center;
     display: flex;
+    }
+
+.logo2 img{
+    width: 15%;
 }
 
-/* Reviews Container */
 .reviews {
     width: 80%;
     max-width: 800px;
@@ -138,12 +145,10 @@ p {
     border-radius: 25px;
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
     text-align: center;
-    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 auto; /* Center the reviews container horizontally */
-    margin-bottom: 90px;
+    margin: 0 auto 90px auto; /* Center horizontally and add bottom margin */
 }
 
 /* Title */
@@ -171,7 +176,7 @@ p {
     flex: 1;
     margin: 10px;
     transition: transform 0.3s ease;
-    max-width: 45%; /* Adjusted for alignment */
+    max-width: 45%;
 }
 
 /* Hover Effect */
@@ -182,8 +187,8 @@ p {
 
 /* Bottom Review */
 .review.bottom-center {
-    max-width: 50%; /* Adjusted for alignment */
-    margin: 0 auto; /* Center the bottom review horizontally */
+    max-width: 50%;
+    margin: 0 auto;
 }
 
 /* Review Text */
@@ -196,7 +201,7 @@ p {
 /* Rating */
 .rating {
     font-size: 1.5em;
-    color: #FFD700; /* Gold color for stars */
+    color: #FFD700;
 }
 
 /* Keyframes for Animations */
@@ -208,5 +213,59 @@ p {
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    .container img {
+        width: 70%; /* Increase image size for better visibility */
+    }
+    .about {
+        flex-direction: column; /* Column layout for mobile */
+    }
+    .text-section {
+        width: 100%; /* Full width on mobile */
+        text-align: center; /* Center-align the text for better readability */
+        margin: 0; /* Reset margin for mobile */
+    }
+    .about img {
+        width: 80%; /* Adjust the width of the image */
+        order: 1; /* Keep the image below the text on mobile */
+        margin: 20px auto;
+        display: block;
+    }
+    .services ul {
+        padding-left: 0; /* Remove padding for better spacing */
+    }
+    .services ul li {
+        font-size: 18px; /* Adjust the font size for mobile */
+    }
+    .call-to-book h1 {
+        font-size: 24px; /* Adjust the font size for mobile */
+    }
+    .star1 img{
+        width: 50%;
+    }
+    .contact-info {
+        width: 90%; /* Full width on mobile */
+        padding: 15px; /* Adjust the padding */
+    }
+    .logo2 img {
+        width: 50%;
+    }
+    .reviews {
+        align-items: center;
+        justify-content: center;
+    }
+    .review-row {
+        flex-direction: column;
+        align-items: center;
+    }
+    .review {
+        max-width: 100%;
+    }
+    .reviews h2 {
+        font-size: 1.8em;
     }
 }
